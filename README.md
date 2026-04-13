@@ -1,4 +1,4 @@
-# QuDrugGuard V2
+# QuDrugGuard
 
 > **Quantum-powered drug interaction checker** — built for World Quantum Day 2026 by Team Quantum Five.
 
