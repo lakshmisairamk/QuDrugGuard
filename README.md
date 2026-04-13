@@ -1,22 +1,22 @@
 # QuDrugGuard
 
-> **Quantum-powered drug interaction checker** — built for World Quantum Day 2026 by Team Quantum Five.
+> **Quantum-powered drug interaction checker**. Built for World Quantum Day 2026 by Team Quantum Five.
 
-QuDrugGuard uses a hybrid Quantum SVM model to predict dangerous drug interactions. V2 introduces a full multi-screen web app with secure authentication, a curated 120-drug database, automatic enzyme detection, a Gemini AI assistant, 100+ language translation support, and a personal check history dashboard.
+QuDrugGuard uses a hybrid Quantum SVM model to predict dangerous drug interactions. It intoduces a full multi-screen web app with secure authentication, a 120-drug database, automatic enzyme detection, a Gemini AI assistant, 100+ language translation support, and a personal check history dashboard.
 
 ---
 
 ## Features
 
-- **Animated Landing Page** — dark-themed entry point with statistics and a _Get Started_ CTA
-- **Secure Auth** — login and signup backed by bcrypt password hashing and a local SQLite database
-- **Drug Category Browser** — 120 drugs across 12 categories, selectable as pill chips (no manual sliders)
-- **Auto Enzyme Detection** — shared enzyme pathways are identified automatically; no user input required
-- **Quantum SVM Prediction** — hybrid quantum circuit + classical SVM predicts interaction risk
-- **Multi-Modal AI Scanner** — scan drug labels or pill images for automatic identification
-- **Gemini AI Assistant** — ask questions about drug interactions in natural language
-- **100+ Language Translation** — full app support for over 100 languages
-- **Check History Dashboard** — per-user history with metric cards for total, dangerous, and safe checks
+- **Animated Landing Page** - dark-themed entry point with statistics and a _Get Started_ CTA
+- **Secure Auth** - login and signup backed by bcrypt password hashing and a local SQLite database
+- **Drug Category Browser** - 120 drugs across 12 categories, selectable as pill chips (no manual sliders)
+- **Auto Enzyme Detection** - shared enzyme pathways are identified automatically; no user input required
+- **Quantum SVM Prediction** - hybrid quantum circuit + classical SVM predicts interaction risk
+- **Multi-Modal AI Scanner** - scan drug labels or pill images for automatic identification
+- **Gemini AI Assistant** - ask questions about drug interactions in natural language
+- **100+ Language Translation** - full app support for over 100 languages
+- **Check History Dashboard** - per-user history with metric cards for total, dangerous, and safe checks
 
 ---
 
@@ -24,18 +24,18 @@ QuDrugGuard uses a hybrid Quantum SVM model to predict dangerous drug interactio
 
 ```
 QuDrugGuard_V2/
-├── .streamlit/            # Streamlit configuration
-├── assets/                # Static assets (images, icons)
-├── app.py                 # Streamlit UI — Landing, Auth, Drug Checker, History, AI Assistant
-├── auth.py                # Login / signup / history — SQLite + bcrypt
-├── drug_db.py             # 120-drug database, enzyme detection, category lookup
-├── data.py                # 28 drug pairs used for model training
-├── quantum_circuit.py     # Quantum circuit definition
-├── train.py               # Trains and saves the hybrid Quantum SVM model
-├── run_all.py             # Integration test — verifies all components
-├── requirements.txt       # All Python dependencies
-├── qudrug_model.pkl       # Pre-trained Quantum SVM model
-└── users.db               # Local user database (auto-created on first run)
+├── .streamlit/          
+├── assets/              
+├── app.py               
+├── auth.py                
+├── drug_db.py             
+├── data.py               
+├── quantum_circuit.py     
+├── train.py              
+├── run_all.py            
+├── requirements.txt       
+├── qudrug_model.pkl      
+└── users.db              
 ```
 
 ---
@@ -93,17 +93,6 @@ Open [http://localhost:8501](http://localhost:8501) in your browser. You'll land
 
 ---
 
-## Troubleshooting
-
-| Error | Fix |
-|---|---|
-| `ModuleNotFoundError: auth` | Make sure `auth.py` is in the same directory as `app.py` |
-| `qudrug_model.pkl not found` | Run `python train.py` to regenerate it |
-| Gemini AI not responding | Check that your Gemini API key is set in `.streamlit/secrets.toml` |
-| Translation not working | Verify internet connection — translation requires an active API call |
-
----
-
 ## Tech Stack
 
 | Layer | Technology |
@@ -123,11 +112,11 @@ Open [http://localhost:8501](http://localhost:8501) in your browser. You'll land
 
 | Member | Role |
 |---|---|
-| **Sairam** | Team Lead · `quantum_circuit.py` · `auth.py` · integration |
-| **Sabareesh** | Dataset · `drug_db.py` · classical SVM block |
-| **Sreehas** | Model training · `train.py` |
-| **Laasya** | Full UI rewrite · `app.py` (all screens + CSS) |
-| **Srujana** | Documentation · README · pitch deck |
+| **Sairam** | Team Lead · Quantum circuit integration |
+| **Sabareesh** | Dataset integration |
+| **Sreehas** | Model training |
+| **Laasya** |  All screens + CSS |
+| **Srujana** | Documentation · README |
 
 ---
 
